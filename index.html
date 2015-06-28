@@ -3,10 +3,10 @@
   <head>
     <title>lgick home page</title>
     <meta charset='utf-8'>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
   <body>
-      <a id="bg" onclick="return false" href="javascript:(function () {
+      <a id='bg' onclick='return false' href='javascript:(function () {
     if (document.getElementById('BackgroundGeneratorBookmarklet')) {
       var elem = document.getElementById('BackgroundGeneratorBookmarklet');
       if (elem.style.top === '0px') {
@@ -19,13 +19,13 @@
       div.id = 'BackgroundGeneratorBookmarklet';
       document.body.appendChild(div);
       var css = document.createElement('link');
-      css.href = 'http://localhost/bg/style.css';
+      css.href = 'https://cdn.rawgit.com/lgick/BackGenerator/master/style.css';
       css.rel = 'stylesheet';
       document.getElementsByTagName('head')[0].appendChild(css);
       var script = document.createElement('script');
-      script.src = 'http://localhost/bg/script.js';
+      script.src = 'https://cdn.rawgit.com/lgick/BackGenerator/master/script.js';
       document.body.appendChild(script);
     }
-  }());">back generator</a>
+  }());'>back generator</a>
   </body>
 </html>
