@@ -32,3 +32,12 @@ body {
  top: 5%;
  width: 269px;
 }
+
+.bg_video {
+  position: absolute;
+  top: 150px;
+  width: 500px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
