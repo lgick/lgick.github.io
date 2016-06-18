@@ -6,7 +6,9 @@
     <link rel='stylesheet' type='text/css' href='style.css'>
   </head>
   <body>
-      <a id='bg' onclick='return false' href="javascript:(function () {
+  <a id='bg' onclick='return false' href="javascript:(function () {
+    var url = 'https://cdn.rawgit.com/lgick/BackGenerator/v1.0/';
+
     if (document.getElementById('BackgroundGeneratorBookmarklet')) {
       var elem = document.getElementById('BackgroundGeneratorBookmarklet');
       if (elem.style.top === '0px') {
@@ -19,14 +21,38 @@
       div.id = 'BackgroundGeneratorBookmarklet';
       document.body.appendChild(div);
       var css = document.createElement('link');
-      css.href = 'https://cdn.rawgit.com/lgick/BackGenerator/v1.0/style.css';
+      css.href = url + 'style.css';
       css.rel = 'stylesheet';
       document.getElementsByTagName('head')[0].appendChild(css);
       var script = document.createElement('script');
-      script.src = 'https://cdn.rawgit.com/lgick/BackGenerator/v1.0/script.js';
+      script.src = url + 'script.js';
       document.body.appendChild(script);
     }
   }());">back generator</a>
+
+  <a id="lg" onclick="return false" href="javascript:(function () {
+    var url = 'https://cdn.rawgit.com/lgick/Converter/v1.2/';
+
+    if (document.getElementById('LG_Bookmarklet')) {
+      var elem = document.getElementById('LG_Bookmarklet');
+      if (elem.style.top === '0px') {
+        elem.style.top = '-125px';
+      } else {
+        elem.style.top = '0px';
+      }
+    } else {
+      var div = document.createElement('div');
+      div.id = 'LG_Bookmarklet';
+      document.body.appendChild(div);
+      var css = document.createElement('link');
+      css.href = url + 'style.css';
+      css.rel = 'stylesheet';
+      document.getElementsByTagName('head')[0].appendChild(css);
+      var script = document.createElement('script');
+      script.src = url + 'script.js';
+      document.body.appendChild(script);
+    }
+    }());">converter</a>
 
     <video class="bg_video" controls preload>
       <source src="bg.mp4"></source>

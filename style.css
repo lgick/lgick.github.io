@@ -12,7 +12,7 @@ body {
  line-height: 18px;
 }
 
-#bg {
+#bg, #lg {
  background-color: #099;
  border: 2px solid #fff;
  border-radius: 5px;
@@ -40,4 +40,8 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+#lg {
+  top: 587px;
 }
